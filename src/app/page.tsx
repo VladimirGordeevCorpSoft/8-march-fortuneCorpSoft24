@@ -204,7 +204,7 @@ export default function Home() {
   if (currentStep === 'welcome') {
     return (
       <div className="min-h-screen bg-gradient-to-br from-pink-100 via-purple-50 to-blue-100 flex items-center justify-center p-4">
-        <div className={`text-center max-w-lg transition-all duration-300 opacity-0 animate-in fade-in-0 slide-in-from-bottom-4 duration-500`}>
+        <div className="text-center max-w-lg">
           <div className="text-8xl mb-6 animate-bounce">🌸</div>
           <h1 className="text-4xl font-bold bg-gradient-to-r from-pink-600 via-purple-600 to-blue-600 bg-clip-text text-transparent mb-4">
             Гадание на 8 Марта
@@ -228,7 +228,7 @@ export default function Home() {
   if (currentStep === 'greeting') {
     return (
       <div className="min-h-screen bg-gradient-to-br from-pink-100 via-purple-50 to-blue-100 flex items-center justify-center p-4">
-        <div className={`text-center max-w-lg transition-all duration-300 opacity-0 animate-in fade-in-0 slide-in-from-bottom-4 duration-500`}>
+        <div className="text-center max-w-lg">
           <div className="text-6xl mb-6">💜</div>
           <h2 className="text-3xl font-bold text-gray-800 mb-6">Как тебя зовут?</h2>
           <input
@@ -254,7 +254,7 @@ export default function Home() {
   if (currentStep === 'moodColor') {
     return (
       <div className="min-h-screen bg-gradient-to-br from-pink-100 via-purple-50 to-blue-100 flex items-center justify-center p-4">
-        <div className={`text-center max-w-2xl transition-all duration-300 opacity-0 animate-in fade-in-0 slide-in-from-bottom-4 duration-500`}>
+        <div className="text-center max-w-2xl">
           <div className="text-6xl mb-4">🎨</div>
           <h2 className="text-3xl font-bold text-gray-800 mb-2">Цвет настроения</h2>
           <p className="text-gray-600 mb-6">Выбери цвет, который отражает твоё настроение сегодня</p>
@@ -282,7 +282,7 @@ export default function Home() {
   if (currentStep === 'aura') {
     return (
       <div className="min-h-screen bg-gradient-to-br from-pink-100 via-purple-50 to-blue-100 flex items-center justify-center p-4">
-        <div className={`text-center max-w-2xl transition-all duration-300 opacity-0 animate-in fade-in-0 slide-in-from-bottom-4 duration-500`}>
+        <div className="text-center max-w-2xl">
           <div className="text-6xl mb-4">🌟</div>
           <h2 className="text-3xl font-bold text-gray-800 mb-2">Аура дня</h2>
           <p className="text-gray-600 mb-6">Какая аура окружает тебя сегодня?</p>
@@ -310,7 +310,7 @@ export default function Home() {
   if (currentStep === 'card') {
     return (
       <div className="min-h-screen bg-gradient-to-br from-pink-100 via-purple-50 to-blue-100 flex items-center justify-center p-4">
-        <div className={`text-center max-w-2xl transition-all duration-300 opacity-0 animate-in fade-in-0 slide-in-from-bottom-4 duration-500`}>
+        <div className="text-center max-w-2xl">
           <div className="text-6xl mb-4">🃏</div>
           <h2 className="text-3xl font-bold text-gray-800 mb-2">Карта дня</h2>
           <p className="text-gray-600 mb-6">Выбери карту, которая тянет тебя к себе</p>
@@ -337,7 +337,7 @@ export default function Home() {
   if (currentStep === 'crystalBall') {
     return (
       <div className="min-h-screen bg-gradient-to-br from-pink-100 via-purple-50 to-blue-100 flex items-center justify-center p-4">
-        <div className={`text-center max-w-lg transition-all duration-300 opacity-0 animate-in fade-in-0 slide-in-from-bottom-4 duration-500`}>
+        <div className="text-center max-w-lg">
           <div className="text-8xl mb-6 animate-pulse">🔮</div>
           <h2 className="text-3xl font-bold text-gray-800 mb-4">Хрустальный шар</h2>
           <p className="text-gray-600 mb-6">Загадай мысленно вопрос и коснись шара...</p>
@@ -359,7 +359,7 @@ export default function Home() {
   if (currentStep === 'totemAnimal') {
     return (
       <div className="min-h-screen bg-gradient-to-br from-pink-100 via-purple-50 to-blue-100 flex items-center justify-center p-4">
-        <div className={`text-center max-w-2xl transition-all duration-300 opacity-0 animate-in fade-in-0 slide-in-from-bottom-4 duration-500`}>
+        <div className="text-center max-w-2xl">
           <div className="text-6xl mb-4">🦊</div>
           <h2 className="text-3xl font-bold text-gray-800 mb-2">Тотемное животное весны</h2>
           <p className="text-gray-600 mb-6">Выбери животное, которое тебе ближе всего</p>
@@ -387,7 +387,7 @@ export default function Home() {
   if (currentStep === 'flower') {
     return (
       <div className="min-h-screen bg-gradient-to-br from-pink-100 via-purple-50 to-blue-100 flex items-center justify-center p-4">
-        <div className={`text-center max-w-2xl transition-all duration-300 opacity-0 animate-in fade-in-0 slide-in-from-bottom-4 duration-500`}>
+        <div className="text-center max-w-2xl">
           <div className="text-6xl mb-4">🌷</div>
           <h2 className="text-3xl font-bold text-gray-800 mb-2">Цветок-двойник</h2>
           <p className="text-gray-600 mb-6">Выбери цветок, который тебе ближе по духу</p>
@@ -426,7 +426,7 @@ export default function Home() {
     
     return (
       <div className="min-h-screen bg-gradient-to-br from-pink-100 via-purple-50 to-blue-100 flex items-center justify-center p-4">
-        <div className={`text-center max-w-lg transition-all duration-300 opacity-0 animate-in fade-in-0 slide-in-from-bottom-4 duration-500`}>
+        <div className="text-center max-w-lg">
           <div className="text-6xl mb-4">🐉</div>
           <h2 className="text-3xl font-bold text-gray-800 mb-2">Китайский календарь удачи</h2>
           <p className="text-gray-600 mb-6">Выбери год своего рождения</p>
@@ -458,7 +458,7 @@ export default function Home() {
   if (currentStep === 'destinyNumber') {
     return (
       <div className="min-h-screen bg-gradient-to-br from-pink-100 via-purple-50 to-blue-100 flex items-center justify-center p-4">
-        <div className={`text-center max-w-lg transition-all duration-300 opacity-0 animate-in fade-in-0 slide-in-from-bottom-4 duration-500`}>
+        <div className="text-center max-w-lg">
           <div className="text-6xl mb-4">🔢</div>
           <h2 className="text-3xl font-bold text-gray-800 mb-2">Число судьбы</h2>
           <p className="text-gray-600 mb-6">Введи своё любимое число (от 1 до 999)</p>
@@ -491,7 +491,7 @@ export default function Home() {
   if (currentStep === 'star') {
     return (
       <div className="min-h-screen bg-gradient-to-br from-pink-100 via-purple-50 to-blue-100 flex items-center justify-center p-4">
-        <div className={`text-center max-w-2xl transition-all duration-300 opacity-0 animate-in fade-in-0 slide-in-from-bottom-4 duration-500`}>
+        <div className="text-center max-w-2xl">
           <div className="text-6xl mb-4">⭐</div>
           <h2 className="text-3xl font-bold text-gray-800 mb-2">Звезда дня</h2>
           <p className="text-gray-600 mb-6">Выбери небесное светило, которое притягивает тебя</p>
@@ -519,7 +519,7 @@ export default function Home() {
   if (currentStep === 'destinyGift') {
     return (
       <div className="min-h-screen bg-gradient-to-br from-pink-100 via-purple-50 to-blue-100 flex items-center justify-center p-4">
-        <div className={`text-center max-w-2xl transition-all duration-300 opacity-0 animate-in fade-in-0 slide-in-from-bottom-4 duration-500`}>
+        <div className="text-center max-w-2xl">
           <div className="text-6xl mb-4">🎁</div>
           <h2 className="text-3xl font-bold text-gray-800 mb-2">Подарок судьбы</h2>
           <p className="text-gray-600 mb-6">Выбери подарок, который тебе хочется получить</p>
@@ -547,7 +547,7 @@ export default function Home() {
   if (currentStep === 'compliment') {
     return (
       <div className="min-h-screen bg-gradient-to-br from-pink-100 via-purple-50 to-blue-100 flex items-center justify-center p-4">
-        <div className={`text-center max-w-lg transition-all duration-300 opacity-0 animate-in fade-in-0 slide-in-from-bottom-4 duration-500`}>
+        <div className="text-center max-w-lg">
           <div className="text-8xl mb-6">✨</div>
           <h2 className="text-3xl font-bold text-gray-800 mb-4">Комплимент от Вселенной</h2>
           <p className="text-gray-600 mb-6">Вселенная хочет сказать тебе что-то особенное...</p>
@@ -569,7 +569,7 @@ export default function Home() {
   if (currentStep === 'congratulation') {
     return (
       <div className="min-h-screen bg-gradient-to-br from-pink-200 via-purple-100 to-blue-100 flex items-center justify-center p-4">
-        <div className={`text-center max-w-2xl transition-all duration-300 opacity-0 animate-in fade-in-0 slide-in-from-bottom-4 duration-500`}>
+        <div className="text-center max-w-2xl">
           <div className="text-6xl mb-6 animate-bounce">💐</div>
           <h2 className="text-3xl font-bold bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent mb-6">
             Поздравление от мужчин КорпСофт24
