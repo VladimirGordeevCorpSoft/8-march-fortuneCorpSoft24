@@ -614,7 +614,7 @@ export default function Home() {
   if (currentStep === 'results') {
     return (
       <div className="min-h-screen bg-gradient-to-br from-pink-100 via-purple-50 to-blue-100 p-4 py-8">
-        <div className={`max-w-2xl mx-auto transition-all duration-300 opacity-0 animate-in fade-in-0 slide-in-from-bottom-4 duration-500`}>
+        <div className="max-w-2xl mx-auto">
           <div className="text-center mb-8">
             <div className="text-5xl mb-4">🔮</div>
             <h1 className="text-3xl font-bold bg-gradient-to-r from-pink-600 via-purple-600 to-blue-600 bg-clip-text text-transparent mb-2">
