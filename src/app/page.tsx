@@ -413,15 +413,10 @@ export default function Home() {
 
   // Этап 7: Китайский календарь
   if (currentStep === 'chineseZodiac') {
-    const zodiacYears: Record<number, typeof chineseZodiacs[0]> = {
-      1996: chineseZodiacs[0], 1997: chineseZodiacs[1], 1998: chineseZodiacs[2], 1999: chineseZodiacs[3],
-      2000: chineseZodiacs[4], 2001: chineseZodiacs[5], 2002: chineseZodiacs[6], 2003: chineseZodiacs[7],
-      2004: chineseZodiacs[8], 2005: chineseZodiacs[9], 2006: chineseZodiacs[10], 2007: chineseZodiacs[11],
-      1984: chineseZodiacs[0], 1985: chineseZodiacs[1], 1986: chineseZodiacs[2], 1987: chineseZodiacs[3],
-      1988: chineseZodiacs[4], 1989: chineseZodiacs[5], 1990: chineseZodiacs[6], 1991: chineseZodiacs[7],
-      1992: chineseZodiacs[8], 1993: chineseZodiacs[9], 1994: chineseZodiacs[10], 1995: chineseZodiacs[11],
-      2008: chineseZodiacs[0], 2009: chineseZodiacs[1], 2010: chineseZodiacs[2], 2011: chineseZodiacs[3],
-      2012: chineseZodiacs[4], 2013: chineseZodiacs[5], 2014: chineseZodiacs[6], 2015: chineseZodiacs[7],
+    // Функция определения знака по году
+    const getZodiacByYear = (year: number) => {
+      const zodiacIndex = (year - 1900) % 12
+      return chineseZodiacs[zodiacIndex]
     }
     
     return (
@@ -435,13 +430,13 @@ export default function Home() {
             onChange={(e) => setSelectedYear(Number(e.target.value))}
             className="w-full px-6 py-4 rounded-full text-center text-xl border-2 border-pink-300 focus:border-purple-500 focus:outline-none shadow-lg mb-6 bg-white"
           >
-            {Array.from({ length: 40 }, (_, i) => 1975 + i).map((year) => (
+            {Array.from({ length: 75 }, (_, i) => 1950 + i).map((year) => (
               <option key={year} value={year}>{year}</option>
             ))}
           </select>
           <button
             onClick={() => {
-              const zodiac = zodiacYears[selectedYear] || randomChoice(chineseZodiacs)
+              const zodiac = getZodiacByYear(selectedYear)
               setResults({ ...results, chineseZodiac: zodiac })
               handleNext('destinyNumber')
             }}
