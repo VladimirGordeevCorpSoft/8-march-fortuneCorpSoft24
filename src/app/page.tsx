@@ -625,8 +625,8 @@ export default function Home() {
               <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-5 shadow-lg flex items-center gap-4 transform hover:scale-[1.02] transition-all duration-300">
                 <span className="text-4xl">{results.moodColor.emoji}</span>
                 <div className="flex-1">
-                  <h3 className="font-bold text-gray-800">Цвет настроения: {results.moodColor.name}</h3>
-                  <p className="text-gray-600 text-sm">{results.moodColor.meaning}</p>
+                  <h3 className="font-bold text-gray-800">✨ Твой мистический цвет: {results.moodColor.name}</h3>
+                  <p className="text-gray-600 text-sm mt-1">{results.moodColor.meaning}</p>
                 </div>
               </div>
             )}
@@ -636,8 +636,8 @@ export default function Home() {
               <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-5 shadow-lg flex items-center gap-4 transform hover:scale-[1.02] transition-all duration-300">
                 <span className="text-4xl">{results.aura.emoji}</span>
                 <div className="flex-1">
-                  <h3 className="font-bold text-gray-800">{results.aura.name}</h3>
-                  <p className="text-gray-600 text-sm">{results.aura.meaning}</p>
+                  <h3 className="font-bold text-gray-800">🌟 Твоя божественная аура</h3>
+                  <p className="text-gray-600 text-sm mt-1">{results.aura.name} — {results.aura.meaning}</p>
                 </div>
               </div>
             )}
@@ -647,8 +647,8 @@ export default function Home() {
               <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-5 shadow-lg flex items-center gap-4 transform hover:scale-[1.02] transition-all duration-300">
                 <span className="text-4xl">{results.card.emoji}</span>
                 <div className="flex-1">
-                  <h3 className="font-bold text-gray-800">Карта дня: {results.card.name}</h3>
-                  <p className="text-gray-600 text-sm">{results.card.meaning}</p>
+                  <h3 className="font-bold text-gray-800">🃏 Твоя карта судьбы: {results.card.name}</h3>
+                  <p className="text-gray-600 text-sm mt-1">{results.card.meaning}</p>
                 </div>
               </div>
             )}
@@ -658,8 +658,8 @@ export default function Home() {
               <div className="bg-gradient-to-r from-purple-100 to-pink-100 rounded-2xl p-5 shadow-lg flex items-center gap-4 transform hover:scale-[1.02] transition-all duration-300">
                 <span className="text-4xl">🔮</span>
                 <div className="flex-1">
-                  <h3 className="font-bold text-gray-800">Хрустальный шар шепчет:</h3>
-                  <p className="text-gray-600 text-sm">{results.crystalBall}</p>
+                  <h3 className="font-bold text-gray-800">💫 Откровение хрустального шара</h3>
+                  <p className="text-gray-600 text-sm mt-1 italic">"{results.crystalBall}"</p>
                 </div>
               </div>
             )}
@@ -669,8 +669,8 @@ export default function Home() {
               <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-5 shadow-lg flex items-center gap-4 transform hover:scale-[1.02] transition-all duration-300">
                 <span className="text-4xl">{results.totemAnimal.emoji}</span>
                 <div className="flex-1">
-                  <h3 className="font-bold text-gray-800">Тотемное животное: {results.totemAnimal.name}</h3>
-                  <p className="text-gray-600 text-sm">{results.totemAnimal.meaning}</p>
+                  <h3 className="font-bold text-gray-800">🦊 Твой дух-покровитель: {results.totemAnimal.name}</h3>
+                  <p className="text-gray-600 text-sm mt-1">{results.totemAnimal.meaning}</p>
                 </div>
               </div>
             )}
@@ -680,8 +680,8 @@ export default function Home() {
               <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-5 shadow-lg flex items-center gap-4 transform hover:scale-[1.02] transition-all duration-300">
                 <span className="text-4xl">{results.flower.emoji}</span>
                 <div className="flex-1">
-                  <h3 className="font-bold text-gray-800">Цветок-двойник: {results.flower.name}</h3>
-                  <p className="text-gray-600 text-sm">{results.flower.meaning}</p>
+                  <h3 className="font-bold text-gray-800">🌸 Твой цветок души: {results.flower.name}</h3>
+                  <p className="text-gray-600 text-sm mt-1">{results.flower.meaning}</p>
                 </div>
               </div>
             )}
@@ -691,8 +691,8 @@ export default function Home() {
               <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-5 shadow-lg flex items-center gap-4 transform hover:scale-[1.02] transition-all duration-300">
                 <span className="text-4xl">{results.chineseZodiac.emoji}</span>
                 <div className="flex-1">
-                  <h3 className="font-bold text-gray-800">Знак года: {results.chineseZodiac.animal}</h3>
-                  <p className="text-gray-600 text-sm">{results.chineseZodiac.prediction}</p>
+                  <h3 className="font-bold text-gray-800">🐉 Твой восточный покровитель: {results.chineseZodiac.animal}</h3>
+                  <p className="text-gray-600 text-sm mt-1">{results.chineseZodiac.prediction}</p>
                 </div>
               </div>
             )}
@@ -704,8 +704,8 @@ export default function Home() {
                   {results.destinyNumber.number}
                 </div>
                 <div className="flex-1">
-                  <h3 className="font-bold text-gray-800">Число судьбы: {results.destinyNumber.number}</h3>
-                  <p className="text-gray-600 text-sm">{results.destinyNumber.meaning}</p>
+                  <h3 className="font-bold text-gray-800">🔢 Твоё сакральное число: {results.destinyNumber.number}</h3>
+                  <p className="text-gray-600 text-sm mt-1">{results.destinyNumber.meaning}</p>
                 </div>
               </div>
             )}
@@ -715,8 +715,8 @@ export default function Home() {
               <div className="bg-gradient-to-r from-yellow-50 to-orange-50 rounded-2xl p-5 shadow-lg flex items-center gap-4 transform hover:scale-[1.02] transition-all duration-300">
                 <span className="text-4xl">{results.star.emoji}</span>
                 <div className="flex-1">
-                  <h3 className="font-bold text-gray-800">Звезда дня: {results.star.name}</h3>
-                  <p className="text-gray-600 text-sm">{results.star.meaning}</p>
+                  <h3 className="font-bold text-gray-800">⭐ Твоя путеводная звезда: {results.star.name}</h3>
+                  <p className="text-gray-600 text-sm mt-1">{results.star.meaning}</p>
                 </div>
               </div>
             )}
@@ -726,8 +726,8 @@ export default function Home() {
               <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-5 shadow-lg flex items-center gap-4 transform hover:scale-[1.02] transition-all duration-300">
                 <span className="text-4xl">{results.destinyGift.emoji}</span>
                 <div className="flex-1">
-                  <h3 className="font-bold text-gray-800">Подарок судьбы: {results.destinyGift.name}</h3>
-                  <p className="text-gray-600 text-sm">{results.destinyGift.meaning}</p>
+                  <h3 className="font-bold text-gray-800">🎁 Твой волшебный дар: {results.destinyGift.name}</h3>
+                  <p className="text-gray-600 text-sm mt-1">{results.destinyGift.meaning}</p>
                 </div>
               </div>
             )}
@@ -737,9 +737,9 @@ export default function Home() {
               <div className="bg-gradient-to-r from-pink-100 via-purple-100 to-blue-100 rounded-2xl p-6 shadow-lg transform hover:scale-[1.02] transition-all duration-300">
                 <div className="flex items-center gap-3 mb-3">
                   <span className="text-4xl">💜</span>
-                  <h3 className="font-bold text-gray-800">Комплимент от Вселенной</h3>
+                  <h3 className="font-bold text-gray-800">✨ Послание Вселенной специально для тебя</h3>
                 </div>
-                <p className="text-gray-700 italic">"{results.compliment}"</p>
+                <p className="text-gray-700 italic text-lg">"{results.compliment}"</p>
               </div>
             )}
           </div>
